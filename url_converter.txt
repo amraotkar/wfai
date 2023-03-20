@@ -1,0 +1,5 @@
+link = "https://github.com/amraotkar/wfai/blob/c627bb8b22d665bc130470f61e3e88a744f297e3/dataset/masters/TB_PA_TRANSACTIONS_MST.xls"
+
+# note: this will break if a repo/organization or subfolder is named "blob" -- would be ideal to use a fancy regex
+# to be more precise here
+print(link.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/"))
